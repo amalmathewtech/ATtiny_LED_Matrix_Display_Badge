@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 6pinconnector
+#
+DEF 6pinconnector JP 0 40 Y Y 1 F N
+F0 "JP" 200 -150 60 H V C CNN
+F1 "6pinconnector" 0 300 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -200 200 200 -100 1 1 0 N
+X MISO 1 -400 150 200 R 50 30 1 1 I
+X VCC 2 400 150 200 L 50 30 1 1 I
+X SCK 3 -400 50 200 R 50 30 1 1 I
+X MOSI 4 400 50 200 L 50 30 1 1 I
+X RST 5 -400 -50 200 R 50 30 1 1 I
+X GND 6 400 -50 200 L 50 30 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
