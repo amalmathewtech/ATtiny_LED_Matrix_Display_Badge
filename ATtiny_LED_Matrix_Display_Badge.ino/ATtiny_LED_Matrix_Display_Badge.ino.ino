@@ -4,7 +4,7 @@
 #define DISPLAY_HEIGHT 5
 
 // "pixels" per second
-#define SPEED          12
+#define SPEED          12       
 
 // the text to display
 #define DISPLAY_STRING "  ATTINY LED MATRIX DISPLAY BADGE    "
@@ -50,8 +50,8 @@ void renderCharacter(char theChar, int charOffset) {
 
   for (byte y = 0; y < DISPLAY_HEIGHT; y++) {
     for (byte x = 0; x < DISPLAY_WIDTH; x++) {
-      // 3 - x to reverse order
-      setPixel(3 - x - charOffset, y, graphic & 0x1);
+      
+      setPixel(3 - x + charOffset, y, graphic & 0x1);
       graphic = graphic >> 1;
     }
   }
