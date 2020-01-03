@@ -69,7 +69,7 @@ void setPixel(byte x, byte y, boolean ledStatus) {
 
 // turn on the pins to light a LED
 void setLed(byte vin, byte gnd, boolean ledStatus) {
-  delay(1);
+  delayMicroseconds(500);
   pinMode(0, INPUT); 
   pinMode(1, INPUT); 
   pinMode(2, INPUT); 
